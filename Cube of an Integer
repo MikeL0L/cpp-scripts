@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	
+	int num;
+	
+	cout << "Input number of terms: ";
+	cin >> num;
+	
+	for( int i = 1; i <= num; i++){
+		long cube = i * i * i;
+		cout << "Number is: " << i << " Cube of " << i << " is " << cube << endl;
+	}
+	
+	return 0;
+	
+}
