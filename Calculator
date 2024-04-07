@@ -38,8 +38,13 @@ void Division() {
     cin >> num1;
     cout << "Enter Second Integer: ";
     cin >> num2;
-    int division = num1 / num2;
-    cout << num1 << " / " << num2 << " = " << division << endl;
+    if (num2 != 0) {
+        int division = num1 / num2;
+        cout << num1 << " / " << num2 << " = " << division << endl;
+    }
+    else {
+        cout << "Division by 0 is undefined." << endl;
+    }
 }
 
 int main() {
@@ -47,7 +52,7 @@ int main() {
        int choice;
        int cont;
        
-       cout << "C++ Calculator (By: Belongilot, Cabot, Pellecer)" << endl;
+       cout << "\nC++ Calculator (By: Belongilot, Cabot, Pellecer)" << endl;
        cout << "1 for Addition, 2 for Subtraction, 3 for Multiplication, 4 for Division" << endl;
        cout << "Enter choice: ";
        cin >> choice;
@@ -65,7 +70,7 @@ int main() {
            Division();
        }
        
-       cout << "Do you want to continue? 1 for yes, 0 for no: " << endl;
+       cout << "Do you want to continue? 1 for yes, 0 for no: ";
        cin >> cont;
        if (cont == 0) {
            break;
