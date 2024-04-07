@@ -70,9 +70,14 @@ int main() {
            Division();
        }
        
+       else {
+           cout << "Undefined!!" << endl;
+       }
+       
        cout << "Do you want to continue? 1 for yes, 0 for no: ";
        cin >> cont;
        if (cont == 0) {
+           cout << "Exiting...";
            break;
        }
     }
