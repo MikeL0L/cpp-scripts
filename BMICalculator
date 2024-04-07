@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    double height, weight, bmi, rounded;
+    double height, weight, bmi;
     
     cout << "Enter Height in Meters: ";
     cin >> height;
